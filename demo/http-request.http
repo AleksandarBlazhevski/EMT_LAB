@@ -1,0 +1,34 @@
+
+###
+GET http://localhost:8080/api/books
+
+###
+POST http://localhost:8080/api/books/add
+Content-Type: application/json
+
+{
+  "name": "NewBook",
+  "category": "CLASSICS",
+  "authorId": 1,
+  "availableCopies": 12
+}
+
+###
+DELETE http://localhost:8080/api/books/delete/1
+
+###
+PUT http://localhost:8080/api/books/update/2
+Content-Type: application/json
+
+{
+  "name": "Book2Changed",
+  "category": "BIOGRAPHY",
+  "authorId": 1,
+  "availableCopies": 2
+}
+
+###
+POST http://localhost:8080/api/books/rent/4
+
+###
+GET http://localhost:8080/api/books
